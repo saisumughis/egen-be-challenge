@@ -1,0 +1,75 @@
+{  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "address": {
+      "type": "object",
+      "properties": {
+        "street": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "zip": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "street",
+        "city",
+        "zip",
+        "state",
+        "country"
+      ]
+    },
+    "dateCreated": {
+      "type": "string"
+    },
+    "company": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "website": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "website"
+      ]
+    },
+    "profilePic": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "firstName",
+    "lastName",
+    "email",
+    "address",
+    "dateCreated",
+    "company",
+    "profilePic"
+  ]
+}
